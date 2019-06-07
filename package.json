@@ -1,0 +1,19 @@
+{
+  "name": "jamie-resume",
+  "version": "1.0.0",
+  "description": "Resume of Jamie Bertram, software developer.",
+  "main": "dist/index.js",
+  "author": "Jamie Bertram <jhbertra@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react": "^16.8.19",
+    "@types/react-dom": "^16.8.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "source-map-loader": "^0.2.4",
+    "typescript": "^3.5.1"
+  }
+}
