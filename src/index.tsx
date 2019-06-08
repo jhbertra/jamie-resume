@@ -5,7 +5,9 @@ import {
     Font,
     Page,
     PDFViewer,
-    StyleSheet
+    StyleSheet,
+    View,
+    Text
 } from "@react-pdf/renderer";
 
 
@@ -20,6 +22,10 @@ function main() {
         },
         page: {
             fontFamily: 'OpenSans'
+        },
+        container: {
+            marginHorizontal: "11%",
+            marginVertical: "10%"
         }
     });
 
@@ -27,6 +33,8 @@ function main() {
         <PDFViewer style={styles.viewer}>
             <Document>
                 <Page size="A4" style={styles.page}>
+                    <View style={styles.container}>
+                    </View>
                 </Page>
             </Document>
         </PDFViewer>,
