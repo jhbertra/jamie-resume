@@ -11,29 +11,52 @@ import {
 } from "@react-pdf/renderer";
 
 
+const styles = StyleSheet.create({
+    viewer: {
+        border: "none",
+        width: "100%",
+        height: "100%"
+    },
+    page: {
+        fontFamily: 'OpenSans'
+    },
+    container: {
+        marginHorizontal: "11%",
+        marginVertical: "10%"
+    },
+    header: {
+        color: "#3CBC75",
+        textTransform: "uppercase"
+    },
+    h1: {
+        fontSize: 24,
+        letterSpacing: 1.2
+    },
+    h2: {
+        fontSize: 14,
+        letterSpacing: 3
+    },
+    h3: {
+        fontSize: 12,
+        letterSpacing: 0.6
+    },
+    h4: {
+        color: "#6F7175",
+        fontSize: 12,
+        letterSpacing: 0.6
+    }
+});
+
+
 function main() {
     registerFonts();
-
-    const styles = StyleSheet.create({
-        viewer: {
-            border: "none",
-            width: "100%",
-            height: "100%"
-        },
-        page: {
-            fontFamily: 'OpenSans'
-        },
-        container: {
-            marginHorizontal: "11%",
-            marginVertical: "10%"
-        }
-    });
 
     ReactDom.render(
         <PDFViewer style={styles.viewer}>
             <Document>
                 <Page size="A4" style={styles.page}>
                     <View style={styles.container}>
+                        <Text style={[styles.header, styles.h2]}>Test</Text>
                     </View>
                 </Page>
             </Document>
