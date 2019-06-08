@@ -13,13 +13,18 @@ function main() {
     registerFonts();
 
     const styles = StyleSheet.create({
+        viewer: {
+            border: "none",
+            width: "100%",
+            height: "100%"
+        },
         page: {
             fontFamily: 'OpenSans'
         }
     });
 
     ReactDom.render(
-        <PDFViewer>
+        <PDFViewer style={styles.viewer}>
             <Document>
                 <Page size="A4" style={styles.page}>
                 </Page>
