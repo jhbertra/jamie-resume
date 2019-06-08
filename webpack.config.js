@@ -1,7 +1,7 @@
 module.exports = {
     entry: "./src/index.tsx",
     output: {
-        filename: "bundle.js",
+        filename: "[name].bundle.js",
         path: __dirname + "/dist"
     },
 
@@ -30,5 +30,11 @@ module.exports = {
     externals: {
         "react": "React",
         "react-dom": "ReactDOM"
+    },
+
+    optimization: {
+        splitChunks: {
+            chunks: 'all',
+        }
     }
 };
