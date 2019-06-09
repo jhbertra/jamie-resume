@@ -1,18 +1,34 @@
 import * as React from "react";
 import { Document, Page, View, Text } from "@react-pdf/renderer";
-import { Styles } from "../domain"
+
+import { StyleSheet } from "../domain";
+import { Divider } from "./divider";
 
 
-export interface ResumeProps {
-    styles: Styles
+interface ResumeProps {
+    style: StyleSheet
 }
 
 
-export const Resume = (props: ResumeProps) => (
+const makeRow = (props: ResumeProps) => (left: JSX.Element) => (right: JSX.Element) =>
+    <View style={props.style.row}>
+        <View style={props.style.left}>
+            {left}
+        </View>
+        <View style={props.style.right}>
+            {right}
+        </View>
+    </View>;
+
+
+export const Resume : React.FunctionComponent<ResumeProps> = props => (
     <Document>
-        <Page size="A4" style={props.styles.page}>
-            <View style={props.styles.container}>
-                <Text style={[props.styles.header, props.styles.h2]}>Test</Text>
+        <Page size="A4" style={props.style.page}>
+            <View style={props.style.container}>
+                {makeRow(props)
+                    (<Text>Left</Text>)
+                    (<Text>Right</Text>)}
+                <Divider style={props.style} title="Test" />
             </View>
         </Page>
     </Document>

@@ -1,16 +1,7 @@
 import * as React from "react";
 import * as ReactDom from "react-dom";
-import {
-    Document,
-    Font,
-    Page,
-    PDFViewer,
-    StyleSheet,
-    View,
-    Text
-} from "@react-pdf/renderer";
+import { Font, PDFViewer, StyleSheet } from "@react-pdf/renderer";
 
-import { Styles } from "./domain"
 import { Resume } from "./components"
 
 
@@ -37,7 +28,8 @@ const styles = StyleSheet.create({
     },
     h2: {
         fontSize: 14,
-        letterSpacing: 3
+        letterSpacing: 3,
+        marginRight: 16
     },
     h3: {
         fontSize: 12,
@@ -47,8 +39,42 @@ const styles = StyleSheet.create({
         color: "#6F7175",
         fontSize: 12,
         letterSpacing: 0.6
+    },
+    row: {
+        backgroundColor: "green",
+        width: "100%",
+        display: "flex",
+        flexDirection: "row",
+        alignContent: "stretch"
+    },
+    dividerRow: {
+        backgroundColor: "yellow",
+        width: "100%",
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        alignContent: "stretch"
+    },
+    left: {
+        backgroundColor: "blue",
+        width: "33%",
+        marginRight: 16
+    },
+    right: {
+        backgroundColor: "red",
+        width: "67%"
+    },
+    divider: {
+        borderTopColor: "#2B2E34",
+        borderTopStyle: "dashed",
+        borderTopWidth: 0.75
+    },
+    dividerRight: {
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center"
     }
-}) as Styles;
+});
 
 
 function main() {
@@ -56,7 +82,7 @@ function main() {
 
     const App = () =>
         <PDFViewer style={styles.viewer}>
-            <Resume styles={styles} />
+            <Resume style={styles} />
         </PDFViewer>;
 
     ReactDom.render(<App />, document.getElementById("root"));
