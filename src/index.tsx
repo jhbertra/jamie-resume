@@ -10,6 +10,9 @@ import {
     Text
 } from "@react-pdf/renderer";
 
+import { Styles } from "./domain"
+import { Resume } from "./components"
+
 
 const styles = StyleSheet.create({
     viewer: {
@@ -45,23 +48,18 @@ const styles = StyleSheet.create({
         fontSize: 12,
         letterSpacing: 0.6
     }
-});
+}) as Styles;
 
 
 function main() {
     registerFonts();
 
-    ReactDom.render(
+    const App = () =>
         <PDFViewer style={styles.viewer}>
-            <Document>
-                <Page size="A4" style={styles.page}>
-                    <View style={styles.container}>
-                        <Text style={[styles.header, styles.h2]}>Test</Text>
-                    </View>
-                </Page>
-            </Document>
-        </PDFViewer>,
-        document.getElementById("root"));
+            <Resume styles={styles} />
+        </PDFViewer>;
+
+    ReactDom.render(<App />, document.getElementById("root"));
 }
 
 
