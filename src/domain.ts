@@ -2,7 +2,7 @@ export interface StyleSheet {
     container: any,
     divider: any,
     dividerRight: any,
-    dividerRow: any,
+    flexCenter: any,
     h1: any,
     h2: any,
     h3: any,
@@ -12,4 +12,10 @@ export interface StyleSheet {
     page: any,
     right: any,
     row: any,
+}
+
+export interface ResumeModel {
+    contact: {[method: string]: string},
+    name: string,
+    summary: string
 }

@@ -11,7 +11,7 @@ interface DividerProps {
 
 
 export const Divider: React.FunctionComponent<DividerProps> = props =>
-    <View style={props.style.dividerRow}>
+    <View style={[props.style.row, props.style.flexCenter]}>
         <View style={[props.style.left]}>
             <View style={props.style.divider} />
         </View>
