@@ -3,6 +3,7 @@ import * as ReactDom from "react-dom";
 import { Font, PDFViewer, StyleSheet } from "@react-pdf/renderer";
 
 import { Resume } from "./components"
+import { ResumeModel } from "./domain";
 
 
 const colorPrimary = "#2B2E34";
@@ -47,7 +48,7 @@ const styles = StyleSheet.create({
     },
     h4: {
         color: colorSecondary,
-        fontSize: 10,
+        fontSize: 9,
         letterSpacing: 0.6
     },
     row: {
@@ -83,12 +84,34 @@ const styles = StyleSheet.create({
 function main() {
     registerFonts();
 
-    const model = {
+    const model : ResumeModel = {
         contact: {
             "github": "https://github.com/jhbertra",
             "phone": "1 (403) 923 - 8142",
-            "email": "jhbertra@gmail.com"
+            "email": "jhbertra@gmail.com",
+            "address": ["109 Donald St", "Ottawa, ON • K1K 1N1"]
         },
+        education: [
+            {
+                institution: "University of Calgary",
+                degree: "BSc. Software Engineering",
+                startDate: new Date("2009-09-01"),
+                endDate: new Date("2014-06-01"),
+                highlights: [
+                    "Test"
+                ]
+            }
+        ],
+        experience: [
+            {
+                position: "Software Developer",
+                employer: "Pandell Technology Corp",
+                startDate: new Date("2017-01-30"),
+                responsibilities: [
+                    "Test"
+                ]
+            }
+        ],
         name: "Jamie Bertram",
         summary: "A pretty cool guy"
     };
