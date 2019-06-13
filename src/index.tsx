@@ -12,6 +12,14 @@ const colorAccent = "#3CBC75";
 
 
 const styles = StyleSheet.create({
+    bMargin8: {
+        marginBottom: 8
+    },
+    bullet: {
+        margin: 2,
+        width: 10,
+        height: 10
+    },
     viewer: {
         border: "none",
         width: "100%",
@@ -57,8 +65,23 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         marginBottom: 12
     },
+    flex: {
+        display: "flex"
+    },
     flexCenter: {
         alignItems: "center"
+    },
+    flexGrow1: {
+        flexGrow: 1,
+    },
+    flexGrow7: {
+        flexGrow: 7,
+    },
+    flexRow: {
+        flexDirection: "row",
+    },
+    fullWidth: {
+        width: "100%"
     },
     left: {
         width: "27%",
@@ -66,6 +89,12 @@ const styles = StyleSheet.create({
     },
     right: {
         width: "73%"
+    },
+    rMargin8: {
+        marginRight: 8
+    },
+    textUpper: {
+        textTransform: "uppercase"
     },
     divider: {
         borderTopColor: colorPrimary,
@@ -113,6 +142,13 @@ function main() {
             }
         ],
         name: "Jamie Bertram",
+        skills: [
+            {skill: "Foo", proficiency: 3},
+            {skill: "Foo", proficiency: 3},
+            {skill: "Foo", proficiency: 3},
+            {skill: "Foo", proficiency: 3},
+            {skill: "Foo", proficiency: 3}
+        ],
         summary: "A pretty cool guy"
     };
 

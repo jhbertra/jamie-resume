@@ -1,8 +1,15 @@
 export interface StyleSheet {
+    bMargin8: any
+    bullet: any
     container: any
     divider: any
     dividerRight: any
+    flex: any
     flexCenter: any
+    flexGrow1: any
+    flexGrow7: any
+    flexRow: any
+    fullWidth: any
     h1: any
     h2: any
     h3: any
@@ -11,7 +18,9 @@ export interface StyleSheet {
     left: any
     page: any
     right: any
+    rMargin8: any
     row: any
+    textUpper: any
 }
 
 export interface ExperienceModel {
@@ -30,10 +39,16 @@ export interface EducationModel {
     highlights: string[]
 }
 
+export interface SkillModel {
+    skill: string
+    proficiency: number
+}
+
 export interface ResumeModel {
     contact: {[method: string]: string | string[]}
     education: EducationModel[]
     experience: ExperienceModel[]
     name: string
+    skills: SkillModel[]
     summary: string
 }

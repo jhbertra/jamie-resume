@@ -1,8 +1,9 @@
 import * as React from "react";
 import { Document, Page, View, Text } from "@react-pdf/renderer";
 
-import { StyleSheet, ResumeModel } from "../domain";
+import { StyleSheet, ResumeModel, SkillModel } from "../domain";
 import { Divider } from "./divider";
+import { Skill } from "./skill";
 
 
 interface ResumeProps {
@@ -52,6 +53,8 @@ function renderLines(lines: string | string[]): React.ReactNode {
 
 export const Resume: React.FunctionComponent<ResumeProps> = ({style, model}) => {
     const makeRowWithStyle = makeRow(style);
+    const renderSkill = (skill: SkillModel) =>
+        <Skill style={style} skill={skill.skill} proficiency={skill.proficiency} />;
 
     return <Document>
         <Page size="A4" style={style.page}>
@@ -107,11 +110,16 @@ export const Resume: React.FunctionComponent<ResumeProps> = ({style, model}) => 
                 
                 {/* Professional Skills section */}
                 <Divider style={style} title="Professional Skills" />
-                {/* makeRowWithStyle
+                {makeRowWithStyle
                     (<View />)
-                    (<View>
-                        
-                    </View>) */}
+                    (<View style={[style.flex, style.flexRow]}>
+                        <View style={style.flexGrow1}>
+                            {model.skills.slice(0, 4).map(renderSkill)}
+                        </View>
+                        <View style={style.flexGrow1}>
+                            {model.skills.slice(4, 8).map(renderSkill)}
+                        </View>
+                    </View>)}
             </View>
         </Page>
     </Document>;
