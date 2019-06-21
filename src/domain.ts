@@ -26,16 +26,16 @@ export interface StyleSheet {
 export interface ExperienceModel {
     position: string
     employer: string
-    startDate: Date
-    endDate?: Date
+    startDate: string
+    endDate?: string
     responsibilities: string[]
 }
 
 export interface EducationModel {
     institution: string
     degree: string
-    startDate: Date
-    endDate?: Date
+    startDate: string
+    endDate?: string
     highlights: string[]
 }
 

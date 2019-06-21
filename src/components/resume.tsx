@@ -37,7 +37,11 @@ const monthNames = [
     "Dec"
 ];
 
-function formatDate(date?: Date): string {
+function formatDate(dateString?: string): string {
+    var date = dateString
+        ? new Date(dateString)
+        : null;
+
     return date
         ? `${monthNames[date.getMonth()]} ${date.getFullYear()}`
         : "present";
