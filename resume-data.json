@@ -1,0 +1,103 @@
+{
+    "name": "Jamie Bertram",
+    "contact": {
+        "github": "https://github.com/jhbertra",
+        "phone": "1 (403) 923 - 8142",
+        "email": "jhbertra@gmail.com",
+        "address": [
+            "109 Donald St",
+            "Ottawa, ON • K1K 1N1"
+        ]
+    },
+    "summary": "A pretty cool guy",
+    "experience": [
+        {
+            "position": "Software Developer",
+            "employer": "Pandell Technology Corp",
+            "startDate": "2017-01-30",
+            "responsibilities": [
+                "Developed and maintained a highly customized enterprise software product",
+                "Reliably delivered new features to large clients",
+                "Minimized and optimized I/O to substantially improve performance",
+                "Applied functional design to drastically improve modularity and testability",
+                "Extracted customizations to configuration to aid support and agility",
+                "Worked with vendors to integrate with external systems used by clients",
+                "Contributed improvements to shared internal libraries",
+                "Setup new TeamCity build agent with updated tooling"
+            ]
+        },
+        {
+            "position": "Technical Founder",
+            "employer": "Novo Ideation Inc.",
+            "startDate": "2015-07-01",
+            "endDate": "2017-01-01",
+            "responsibilities": [
+                "Developed and launched a social media platform from scratch",
+                "Co-founded startup that tackled diverse and interesting projects",
+                "Worked with a variety of web technologies and frameworks",
+                "Provisioned and configured team tools, dev ops, and automated testing"
+            ]
+        },
+        {
+            "position": "Junior Developer",
+            "employer": "Pason Systems Corp",
+            "startDate": "2014-09-01",
+            "endDate": "2015-06-01",
+            "responsibilities": [
+                "Built, maintained, and deployed Windows images for workstation machines",
+                "Provisioned environments using configuration management (MDT)"
+            ]
+        },
+        {
+            "position": "Intern",
+            "employer": "Aviak Consulting",
+            "startDate": "2012-05-01",
+            "endDate": "2013-08-01",
+            "responsibilities": [
+                "Developed Exchange ActiveSync Client for Nokia feature phones (J2ME)",
+                "Developed XMPP client for Android and J2ME with Facebook integration",
+                "Worked with international teams",
+                "Led project to replace J2ME Polish application to native Android application"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "University of Calgary",
+            "degree": "BSc. Software Engineering",
+            "startDate": "2009-09-01",
+            "endDate": "2014-06-01",
+            "highlights": [
+                "Developed extensible home automation system as capstone project",
+                "Won 1st prize in raytracer design competition in computer graphics course",
+                "Developed a classroom management platform with social features"
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "category": "Programming",
+            "details": "C#, F#, JavaScript, TypeScript, Java, C, C++, Haskell, Elm, Swift, Kotlin"
+        },
+        {
+            "category": "Environments",
+            "details": ".NET, JVM, Web browsers, Node.js, Windows, UNIX, Android, iOS, Mac"
+        },
+        {
+            "category": "Frameworks",
+            "details": "ASP.NET, React, React Native, Angular, Vue, Ember, Laravel, Express"
+        },
+        {
+            "category": "Databases",
+            "details": "MySql, SQL Server, MongoDb, Redis, 6NF database design"
+        },
+        {
+            "category": "Paradigms",
+            "details": "Functional, reactive, object-oriented, structured"
+        },
+        {
+            "category": "Tools",
+            "details": "Git, Bash, PowerShell, CI + build automation, IntelliJ platform, Visual Studio, VS Code"
+        }
+    ]
+}

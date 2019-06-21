@@ -40,8 +40,8 @@ export interface EducationModel {
 }
 
 export interface SkillModel {
-    skill: string
-    proficiency: number
+    category: string
+    details: string
 }
 
 export interface ResumeModel {

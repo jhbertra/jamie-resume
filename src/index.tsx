@@ -3,8 +3,7 @@ import * as ReactDom from "react-dom";
 import { Font, PDFViewer, StyleSheet } from "@react-pdf/renderer";
 
 import { Resume } from "./components"
-import { ResumeModel } from "./domain";
-
+import resumeData from "../resume-data.json";
 
 const colorPrimary = "#2B2E34";
 const colorSecondary = "#6F7175";
@@ -16,9 +15,7 @@ const styles = StyleSheet.create({
         marginBottom: 8
     },
     bullet: {
-        margin: 2,
-        width: 10,
-        height: 10
+        lineHeight: 2
     },
     viewer: {
         border: "none",
@@ -113,48 +110,9 @@ const styles = StyleSheet.create({
 function main() {
     registerFonts();
 
-    const model : ResumeModel = {
-        contact: {
-            "github": "https://github.com/jhbertra",
-            "phone": "1 (403) 923 - 8142",
-            "email": "jhbertra@gmail.com",
-            "address": ["109 Donald St", "Ottawa, ON • K1K 1N1"]
-        },
-        education: [
-            {
-                institution: "University of Calgary",
-                degree: "BSc. Software Engineering",
-                startDate: new Date("2009-09-01"),
-                endDate: new Date("2014-06-01"),
-                highlights: [
-                    "Test"
-                ]
-            }
-        ],
-        experience: [
-            {
-                position: "Software Developer",
-                employer: "Pandell Technology Corp",
-                startDate: new Date("2017-01-30"),
-                responsibilities: [
-                    "Test"
-                ]
-            }
-        ],
-        name: "Jamie Bertram",
-        skills: [
-            {skill: "Foo", proficiency: 3},
-            {skill: "Foo", proficiency: 3},
-            {skill: "Foo", proficiency: 3},
-            {skill: "Foo", proficiency: 3},
-            {skill: "Foo", proficiency: 3}
-        ],
-        summary: "A pretty cool guy"
-    };
-
     const App = () =>
         <PDFViewer style={styles.viewer}>
-            <Resume style={styles} model={model} />
+            <Resume style={styles} model={resumeData} />
         </PDFViewer>;
 
     ReactDom.render(<App />, document.getElementById("root"));
