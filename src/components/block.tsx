@@ -3,7 +3,6 @@ import { View, Text } from "@react-pdf/renderer";
 
 import { StyleSheet } from "../domain";
 
-
 interface BlockProps {
     style: StyleSheet;
     header: string;
@@ -37,7 +36,6 @@ function formatDate(dateString?: string): string {
         ? `${monthNames[date.getMonth()]} ${date.getFullYear()}`
         : "present";
 }
-
 
 export const Block: React.FunctionComponent<BlockProps> = props =>
     <View style={props.style.row}>

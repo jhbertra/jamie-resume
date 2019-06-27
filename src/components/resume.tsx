@@ -5,18 +5,9 @@ import { StyleSheet, ResumeModel } from "../domain";
 import { Block } from "./block";
 import { Divider } from "./divider";
 
-
 interface ResumeProps {
     style: StyleSheet,
     model: ResumeModel
-}
-
-function renderLines(lines: string | string[]): React.ReactNode {
-    return Array.isArray(lines)
-        ? (<React.Fragment>
-            {lines.map(line => <Text>{line}</Text>)}
-          </React.Fragment>)
-        : (<Text>{lines}</Text>);
 }
 
 export const Resume: React.FunctionComponent<ResumeProps> = ({style, model}) =>
@@ -24,19 +15,16 @@ export const Resume: React.FunctionComponent<ResumeProps> = ({style, model}) =>
         <Page size="A4" style={style.page}>
             <View style={style.container}>
                 <View>
-                    <View style={style.row}>
-                        <View style={style.left}>
+                    <View>
+                        <Text style={[style.header, style.h1]}>{model.name}</Text>
+                        <View style={style.contact}>
                             {Object
                                 .keys(model.contact)
                                 .map(method =>
-                                    <React.Fragment>
+                                    <View>
                                         <Text style={[style.header, style.h3]}>{method}</Text>
-                                        {renderLines(model.contact[method])}
-                                    </React.Fragment>)}
-                        </View>
-                        <View style={style.right}>
-                            <Text style={[style.header, style.h1]}>{model.name}</Text>
-                            <Text>{model.summary}</Text>
+                                        <Text>{model.contact[method]}</Text>
+                                    </View>)}
                         </View>
                     </View>
                     <Divider style={style} title="Experience" />
@@ -46,7 +34,7 @@ export const Resume: React.FunctionComponent<ResumeProps> = ({style, model}) =>
                             header={experience.position}
                             subHeader={experience.employer}
                             startDate={experience.startDate}
-                            endDate={experience.startDate}
+                            endDate={experience.endDate}
                             details={experience.responsibilities} />)}
                     <Divider style={style} title="Education" />
                     {model.education.map(education =>
@@ -55,7 +43,7 @@ export const Resume: React.FunctionComponent<ResumeProps> = ({style, model}) =>
                             header={education.institution}
                             subHeader={education.degree}
                             startDate={education.startDate}
-                            endDate={education.startDate}
+                            endDate={education.endDate}
                             details={education.highlights} />)}
                 </View>
             </View>
@@ -80,9 +68,8 @@ export const Resume: React.FunctionComponent<ResumeProps> = ({style, model}) =>
                             header={engagement.role}
                             subHeader={engagement.organization}
                             startDate={engagement.startDate}
-                            endDate={engagement.startDate}
+                            endDate={engagement.endDate}
                             details={engagement.responsibilities} />)}
-                    
                 </View>
             </View>
             <Text style={style.bottom}>

@@ -4,12 +4,8 @@
         "github": "github.com/jhbertra",
         "phone": "1 (403) 923 - 8142",
         "email": "jhbertra@gmail.com",
-        "address": [
-            "109 Donald St",
-            "Ottawa, ON • K1K 1N1"
-        ]
+        "address": "109 Donald St • Ottawa, ON • K1K 1N1"
     },
-    "summary": "A pretty cool guy",
     "experience": [
         {
             "position": "Software Developer",
@@ -32,8 +28,8 @@
             "startDate": "2015-07-01",
             "endDate": "2017-01-01",
             "responsibilities": [
+                "Co-founded software services startup",
                 "Developed and launched a social media platform from scratch",
-                "Co-founded startup that tackled diverse and interesting projects",
                 "Worked with a variety of web technologies and frameworks",
                 "Provisioned and configured team tools, dev ops, and automated testing"
             ]
@@ -56,8 +52,8 @@
             "responsibilities": [
                 "Developed Exchange ActiveSync Client for Nokia feature phones (J2ME)",
                 "Developed XMPP client for Android and J2ME with Facebook integration",
-                "Worked with international teams",
-                "Led project to replace J2ME Polish application to native Android application"
+                "Worked with international teams in Finland, Bangalore, Indonesia, USA",
+                "Led project to convert J2ME Polish application to native Android application"
             ]
         }
     ],

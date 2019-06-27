@@ -3,12 +3,10 @@ import { View, Text } from "@react-pdf/renderer";
 
 import { StyleSheet } from "../domain";
 
-
 interface DividerProps {
     style: StyleSheet,
     title: String
 }
-
 
 export const Divider: React.FunctionComponent<DividerProps> = props =>
     <View style={[props.style.row, props.style.flexCenter]}>
