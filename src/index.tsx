@@ -14,8 +14,16 @@ const styles = StyleSheet.create({
     bMargin8: {
         marginBottom: 8
     },
+    bottom: {
+        position: 'absolute',
+        bottom: 30,
+        left: 0,
+        right: 0,
+        textAlign: 'center',
+        color: 'grey',
+    },
     bullet: {
-        lineHeight: 2
+        lineHeight: 1.7
     },
     viewer: {
         border: "none",
@@ -41,7 +49,7 @@ const styles = StyleSheet.create({
         marginBottom: 18
     },
     h2: {
-        fontSize: 13,
+        fontSize: 12,
         letterSpacing: 3,
         marginRight: 12,
         marginBottom: 2
@@ -60,6 +68,7 @@ const styles = StyleSheet.create({
         width: "100%",
         display: "flex",
         flexDirection: "row",
+        marginTop: 8,
         marginBottom: 12
     },
     flex: {
@@ -81,11 +90,11 @@ const styles = StyleSheet.create({
         width: "100%"
     },
     left: {
-        width: "27%",
+        width: "26%",
         marginRight: 16
     },
     right: {
-        width: "73%"
+        width: "74%"
     },
     rMargin8: {
         marginRight: 8

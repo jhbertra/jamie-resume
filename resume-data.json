@@ -1,7 +1,7 @@
 {
     "name": "Jamie Bertram",
     "contact": {
-        "github": "https://github.com/jhbertra",
+        "github": "github.com/jhbertra",
         "phone": "1 (403) 923 - 8142",
         "email": "jhbertra@gmail.com",
         "address": [
@@ -20,9 +20,9 @@
                 "Reliably delivered new features to large clients",
                 "Minimized and optimized I/O to substantially improve performance",
                 "Applied functional design to drastically improve modularity and testability",
-                "Extracted customizations to configuration to aid support and agility",
+                "Extracted customizations to configuration to improve support responsiveness",
                 "Worked with vendors to integrate with external systems used by clients",
-                "Contributed improvements to shared internal libraries",
+                "Contributed improvements to shared internal company libraries",
                 "Setup new TeamCity build agent with updated tooling"
             ]
         },
@@ -77,11 +77,11 @@
     "skills": [
         {
             "category": "Programming",
-            "details": "C#, F#, JavaScript, TypeScript, Java, C, C++, Haskell, Elm, Swift, Kotlin"
+            "details": "Highly experienced in C#, JavaScript, and Java. Experienced in F#, TypeScript, C, C++, Haskell, Elm, Swift, Kotlin."
         },
         {
             "category": "Environments",
-            "details": ".NET, JVM, Web browsers, Node.js, Windows, UNIX, Android, iOS, Mac"
+            "details": ".NET, JVM, browsers, Node.js, Windows, UNIX, Android, iOS, Mac"
         },
         {
             "category": "Frameworks",
@@ -98,6 +98,32 @@
         {
             "category": "Tools",
             "details": "Git, Bash, PowerShell, CI + build automation, IntelliJ platform, Visual Studio, VS Code"
+        }
+    ],
+    "communityEngagement": [
+        {
+            "role": "Board Member",
+            "organization": "Choir Alberta",
+            "startDate": "2013-11-01",
+            "endDate": "2015-06-01",
+            "responsibilities": [
+                "Participated in governance of provincial choral association",
+                "Sat on several working groups, including ChoralFest (annual choir festival)",
+                "Assisted and coordinated itineraries and travel with guests and adjudicators"
+            ]
+        },
+        {
+            "role": "General Manager",
+            "organization": "Vocal Group Kiva",
+            "startDate": "2013-02-01",
+            "endDate": "2018-11-01",
+            "responsibilities": [
+                "Founded, organized, and sang with 8-voice a cappella group",
+                "Mentored new members in important vocal group skills",
+                "Recorded, edited, and co-produced a studio album",
+                "Organized communication between working groups and directors",
+                "Launched a successful crowd-funding campaign on Kickstarter"
+            ]
         }
     ]
 }
