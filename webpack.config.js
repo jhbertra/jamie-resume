@@ -33,7 +33,5 @@ module.exports = {
         splitChunks: {
             chunks: 'all',
         }
-    },
-
-    watch: true
+    }
 };

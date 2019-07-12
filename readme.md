@@ -2,9 +2,25 @@
 
 Hi, my name is Jamie Bertram and I am a software developer living in
 Ottawa Ontario. This small repository contains the source code used
-to generate my resume. To try generating it yourself (or to repurpose
-it for your own needs), please read on!  Otherwise, you can download the
-most recent copy [here](TODO).
+to generate my resume. For privacy reasons, my actual resume is not
+hosted here. Please feel free to fork this repo and use it to create
+your own spiffy resume!
+
+## Generating a Resume
+
+You can edit `resume-data.json` in the root directory of the repo to
+add your own details. A sample has been given for demonstration
+purposes.
+
+To build the page, run:
+
+```sh
+$ yarn
+$ ./build.sh
+```
+
+Then, open `intex.html` in a web browser. You can download the generated
+PDF from the opened page.
 
 ## Acknowledgements
 
