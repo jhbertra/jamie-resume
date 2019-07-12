@@ -1,17 +1,17 @@
 {
-    "name": "Jamie Bertram",
+    "name": "John Doe",
     "contact": {
-        "github": "github.com/jhbertra",
-        "phone": "1 (403) 923 - 8142",
-        "email": "jhbertra@gmail.com",
-        "address": "109 Donald St • Ottawa, ON • K1K 1N1"
+        "github": "github.com/johnnyjohnnydoedoe",
+        "phone": "1 (555) 123 - 4567",
+        "email": "john@doe.com",
+        "address": "123 Street Rd"
     },
     "experience": [
         {
             "position": "Software Developer",
-            "employer": "Pandell Technology Corp",
-            "startDate": "2017-01-30",
-            "location": "Calgary, AB • Ottawa, ON",
+            "employer": "Software corp",
+            "startDate": "2016-01-01",
+            "location": "Townsville, NB",
             "responsibilities": [
                 "Developed and maintained a highly customized enterprise software product",
                 "Reliably delivered new features to large clients",
@@ -19,57 +19,32 @@
                 "Applied functional design to drastically improve modularity and testability",
                 "Extracted customizations to configuration to improve support responsiveness",
                 "Worked with vendors to integrate with external systems used by clients",
-                "Contributed improvements to shared internal company libraries",
-                "Setup new TeamCity build agent with updated tooling"
+                "Contributed improvements to shared internal company libraries"
             ]
         },
         {
             "position": "Technical Founder",
-            "employer": "Novo Ideation Inc.",
-            "startDate": "2015-07-01",
-            "endDate": "2017-01-01",
-            "location": "Calgary, AB",
+            "employer": "Startup Inc.",
+            "startDate": "2014-07-01",
+            "endDate": "2016-01-01",
+            "location": "Tonsville, NB",
             "responsibilities": [
                 "Co-founded software services startup",
                 "Developed and launched a social media platform from scratch",
                 "Worked with a variety of web technologies and frameworks",
                 "Provisioned and configured team tools, dev ops, and automated testing"
             ]
-        },
-        {
-            "position": "Junior Developer",
-            "employer": "Pason Systems Corp",
-            "startDate": "2014-09-01",
-            "endDate": "2015-06-01",
-            "location": "Calgary, AB",
-            "responsibilities": [
-                "Built, maintained, and deployed Windows images for workstation machines",
-                "Provisioned environments using configuration management (MDT)"
-            ]
-        },
-        {
-            "position": "Intern",
-            "employer": "Aviak Consulting",
-            "startDate": "2012-05-01",
-            "endDate": "2013-08-01",
-            "location": "Calgary, AB",
-            "responsibilities": [
-                "Developed Exchange ActiveSync Client for Nokia feature phones (J2ME)",
-                "Developed XMPP client for Android and J2ME with Facebook integration",
-                "Worked with international teams in Finland, Bangalore, Indonesia, USA",
-                "Led project to convert J2ME Polish application to native Android application"
-            ]
         }
     ],
     "education": [
         {
-            "institution": "University of Calgary",
+            "institution": "University of Software",
             "degree": "BSc. Software Engineering",
             "startDate": "2009-09-01",
             "endDate": "2014-06-01",
             "location": "Calgary, AB",
             "highlights": [
-                "Developed extensible home automation system as capstone project",
+                "Built cool capstone project",
                 "Won 1st prize in raytracer design competition in computer graphics course",
                 "Developed a classroom management platform with social features"
             ]
@@ -103,39 +78,13 @@
     ],
     "communityEngagement": [
         {
-            "role": "Singer",
-            "organization": "Various community choirs",
-            "startDate": "2019-01-27",
-            "location": "Ottawa, ON",
+            "role": "Coordinator",
+            "organization": "Save the Haskellers",
+            "startDate": "2016-01-27",
+            "location": "Townsville, NB",
             "responsibilities": [
-                "Singing in Ottawa choirs: Capital Chamber Choir and Harmonic Generation.",
-                "Involved with recording on a volunteer basis"
-            ]
-        },
-        {
-            "role": "General Manager",
-            "organization": "Vocal Group Kiva",
-            "startDate": "2013-02-01",
-            "endDate": "2018-11-01",
-            "location": "Calgary, AB",
-            "responsibilities": [
-                "Founded, organized, and sang with 8-voice a cappella group",
-                "Mentored new members in important vocal group skills",
-                "Recorded, edited, and co-produced a studio album",
-                "Organized communication between working groups and directors",
-                "Launched a successful crowd-funding campaign on Kickstarter"
-            ]
-        },
-        {
-            "role": "Board Member",
-            "organization": "Choir Alberta",
-            "startDate": "2013-11-01",
-            "endDate": "2015-06-01",
-            "location": "Alberta",
-            "responsibilities": [
-                "Participated in governance of provincial choral association",
-                "Sat on several working groups, including ChoralFest (annual choir festival)",
-                "Assisted and coordinated itineraries and travel with guests and adjudicators"
+                "Provided charity projects to out-of-work Haskell developers",
+                "Coordinated support groups"
             ]
         }
     ]
