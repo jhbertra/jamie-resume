@@ -11,6 +11,7 @@
             "position": "Software Developer",
             "employer": "Pandell Technology Corp",
             "startDate": "2017-01-30",
+            "location": "Calgary, AB • Ottawa, ON",
             "responsibilities": [
                 "Developed and maintained a highly customized enterprise software product",
                 "Reliably delivered new features to large clients",
@@ -27,6 +28,7 @@
             "employer": "Novo Ideation Inc.",
             "startDate": "2015-07-01",
             "endDate": "2017-01-01",
+            "location": "Calgary, AB",
             "responsibilities": [
                 "Co-founded software services startup",
                 "Developed and launched a social media platform from scratch",
@@ -39,6 +41,7 @@
             "employer": "Pason Systems Corp",
             "startDate": "2014-09-01",
             "endDate": "2015-06-01",
+            "location": "Calgary, AB",
             "responsibilities": [
                 "Built, maintained, and deployed Windows images for workstation machines",
                 "Provisioned environments using configuration management (MDT)"
@@ -49,6 +52,7 @@
             "employer": "Aviak Consulting",
             "startDate": "2012-05-01",
             "endDate": "2013-08-01",
+            "location": "Calgary, AB",
             "responsibilities": [
                 "Developed Exchange ActiveSync Client for Nokia feature phones (J2ME)",
                 "Developed XMPP client for Android and J2ME with Facebook integration",
@@ -63,6 +67,7 @@
             "degree": "BSc. Software Engineering",
             "startDate": "2009-09-01",
             "endDate": "2014-06-01",
+            "location": "Calgary, AB",
             "highlights": [
                 "Developed extensible home automation system as capstone project",
                 "Won 1st prize in raytracer design competition in computer graphics course",
@@ -98,14 +103,13 @@
     ],
     "communityEngagement": [
         {
-            "role": "Board Member",
-            "organization": "Choir Alberta",
-            "startDate": "2013-11-01",
-            "endDate": "2015-06-01",
+            "role": "Singer",
+            "organization": "Various community choirs",
+            "startDate": "2019-01-27",
+            "location": "Ottawa, ON",
             "responsibilities": [
-                "Participated in governance of provincial choral association",
-                "Sat on several working groups, including ChoralFest (annual choir festival)",
-                "Assisted and coordinated itineraries and travel with guests and adjudicators"
+                "Singing in Ottawa choirs: Capital Chamber Choir and Harmonic Generation.",
+                "Involved with recording on a volunteer basis"
             ]
         },
         {
@@ -113,12 +117,25 @@
             "organization": "Vocal Group Kiva",
             "startDate": "2013-02-01",
             "endDate": "2018-11-01",
+            "location": "Calgary, AB",
             "responsibilities": [
                 "Founded, organized, and sang with 8-voice a cappella group",
                 "Mentored new members in important vocal group skills",
                 "Recorded, edited, and co-produced a studio album",
                 "Organized communication between working groups and directors",
                 "Launched a successful crowd-funding campaign on Kickstarter"
+            ]
+        },
+        {
+            "role": "Board Member",
+            "organization": "Choir Alberta",
+            "startDate": "2013-11-01",
+            "endDate": "2015-06-01",
+            "location": "Alberta",
+            "responsibilities": [
+                "Participated in governance of provincial choral association",
+                "Sat on several working groups, including ChoralFest (annual choir festival)",
+                "Assisted and coordinated itineraries and travel with guests and adjudicators"
             ]
         }
     ]

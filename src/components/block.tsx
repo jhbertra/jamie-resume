@@ -9,6 +9,7 @@ interface BlockProps {
     subHeader: string;
     startDate: string;
     endDate?: string;
+    location: string;
     details: string[];
 }
 
@@ -45,6 +46,7 @@ export const Block: React.FunctionComponent<BlockProps> = props =>
             </Text>
             <Text>{props.subHeader}</Text>
             <Text>{formatDate(props.startDate)} - {formatDate(props.endDate)}</Text>
+            <Text>{props.location}</Text>
         </View>
         <View style={props.style.right}>
             {props.details.map(deatil =>

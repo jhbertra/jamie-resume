@@ -22,6 +22,7 @@ export interface ExperienceModel {
     employer: string;
     startDate: string;
     endDate?: string;
+    location: string;
     responsibilities: string[];
 }
 
@@ -30,6 +31,7 @@ export interface EducationModel {
     degree: string;
     startDate: string;
     endDate?: string;
+    location: string;
     highlights: string[];
 }
 
@@ -43,6 +45,7 @@ export interface CommunityEngagementModel {
     role: string;
     startDate: string;
     endDate?: string;
+    location: string;
     responsibilities: string[];
 }
 

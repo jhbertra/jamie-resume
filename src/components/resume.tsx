@@ -35,6 +35,7 @@ export const Resume: React.FunctionComponent<ResumeProps> = ({style, model}) =>
                             subHeader={experience.employer}
                             startDate={experience.startDate}
                             endDate={experience.endDate}
+                            location={experience.location}
                             details={experience.responsibilities} />)}
                     <Divider style={style} title="Education" />
                     {model.education.map(education =>
@@ -44,6 +45,7 @@ export const Resume: React.FunctionComponent<ResumeProps> = ({style, model}) =>
                             subHeader={education.degree}
                             startDate={education.startDate}
                             endDate={education.endDate}
+                            location={education.location}
                             details={education.highlights} />)}
                 </View>
             </View>
@@ -69,6 +71,7 @@ export const Resume: React.FunctionComponent<ResumeProps> = ({style, model}) =>
                             subHeader={engagement.organization}
                             startDate={engagement.startDate}
                             endDate={engagement.endDate}
+                            location={engagement.location}
                             details={engagement.responsibilities} />)}
                 </View>
             </View>
