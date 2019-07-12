@@ -3,8 +3,8 @@
 Hi, my name is Jamie Bertram and I am a software developer living in
 Ottawa Ontario. This small repository contains the source code used
 to generate my resume. For privacy reasons, my actual resume is not
-hosted here. Please feel free to fork this repo and use it to create
-your own spiffy resume!
+hosted here. For a copy of my real resume, please contact me directly.
+Please feel free to fork this repo and use it to create your own spiffy resume!
 
 ## Generating a Resume
 
